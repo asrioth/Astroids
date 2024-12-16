@@ -2,6 +2,9 @@ import pygame
 
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
+    WHITE = pygame.Color(255, 255, 255)
+    LINE_WIDTH = 2
+    
     def __init__(self, x, y, radius):
         # we will be using this later
         if hasattr(self, "containers"):
